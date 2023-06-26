@@ -34,7 +34,16 @@
             font-size: 40px;
             
             font-weight: bold;
-            font-family: 'Playfair Display', serif;        
+            font-family: "Trebuchet MS", 'Playfair Display', serif;        
+        }
+        #cn-subtitle {
+            display: flex;
+            font-size: 12px;
+            font-family: "Trebuchet MS", serif;
+            position: relative;
+            left: 10px;
+            top: 1px;        
+            color:#fdbe00;
         }
 
         .logo {
@@ -42,6 +51,7 @@
             height: 50px;
             border-radius: 50%;
         }
+
     </style>
 </head>
 
@@ -51,7 +61,9 @@
         <nav>
             <img src="https://media.istockphoto.com/id/1193591781/photo/obedient-dog-breed-welsh-corgi-pembroke-sitting-and-smiles-on-a-white-background-not-isolate.jpg?s=1024x1024&w=is&k=20&c=myYj-W8qARuAaO8h5N6cpWFuA-UPfSNiNVlBjQh4ZkE="
                 alt="Company Logo" class="logo">
-            <a href="#"><span class="company-name">CorgiTech</span></a>
+            <span class="company-name">
+                Corgitech <span id="cn-subtitle"> Privacy First, Money Second </span>
+                </span>
             <a href="#">HOME</a>
             <a href="#">ABOUT US</a>
             <a href="#">CORGIVPN</a>

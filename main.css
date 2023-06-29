@@ -1,0 +1,186 @@
+body {
+    height:100%;
+    width: 100%;
+    margin: 0;
+ }
+
+.navigation {
+    text-align: center;
+    
+}
+nav{
+    padding-top: 20px;
+}
+
+.navigation nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: all 250ms;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333333;
+    margin-top: auto;
+     margin-bottom: auto;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: #fdbe00;
+}
+
+.company-name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", 'Playfair Display', serif;
+}
+
+#cn-subtitle {
+    display: flex;
+    font-size: 12px;
+    font-family: "Trebuchet MS", serif;
+    position: relative;
+    left: 10px;
+    top: 1px;
+    color: #fdbe00;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.homeinfo {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Trebuchet MS", serif;
+    margin-top: 20px;
+}
+
+.homeinfohead {
+    font-weight: bold;
+    font-family: "Trebuchet MS", serif;
+    display: flex;
+    justify-content: center;
+}
+
+.homecontainer {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.homebutton {
+    background-color: #fdbe00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.buttoncontainer a {
+    text-decoration: none;
+    transition: all 250ms;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #fdbe00;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+}
+
+.buttoncontainer a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.media {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    padding: 5px
+}
+
+footer {
+    background-color: #484848;
+    display: flex;
+    justify-content: center;
+}
+        
+footer h2{
+    font-family: 'Trebuchet MS';
+    color:white;
+}
+        
+footer img{
+    height:40px;
+    width:40px;
+}
+        
+footer label{
+    font-family: calibri;
+    font-size: 1.2em;
+    position: relative;
+    top: -14px;
+    padding: 2px;
+    color:#fdbe00
+}
+footer a:link{
+    text-decoration: none;
+    color:#fdbe00;
+}
+footer a:visited{
+    text-decoration: none;
+    color:#fdbe00;
+}
+
+        
+footer.fsections{
+    margin:10px;
+    text-align: center;        
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+footer li{
+    font-size:1.2em;
+    margin:25px 0px 25px 0px;
+    font-family: Calibri;
+}
+#footercontact{
+    color:#fdbe00;
+    font-family: Calibri;
+    font-size:1.1em;
+}
+        
+.vl{
+    border-left: 2px solid #333333;
+    height: 250px;
+    position: relative;
+    margin:20px 50px 20px 50px;
+}
+

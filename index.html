@@ -3,207 +3,8 @@
 
 <head>
     <title></title>
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .navigation {
-            text-align: center;
-        }
-
-        .navigation nav {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        nav a {
-            text-decoration: none;
-            transition: all 250ms;
-            font-weight: bold;
-            font-family: "Roboto Condensed", sans-serif;
-            color: #333333;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-        nav a:hover {
-            transform: scale(1.1);
-            color: #fdbe00;
-        }
-
-        .company-name {
-            font-size: 40px;
-            font-weight: bold;
-            font-family: "Trebuchet MS", 'Playfair Display', serif;
-        }
-
-        #cn-subtitle {
-            display: flex;
-            font-size: 12px;
-            font-family: "Trebuchet MS", serif;
-            position: relative;
-            left: 10px;
-            top: 1px;
-            color: #fdbe00;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-        .homeinfo {
-            text-align: center;
-            font-size: 20px;
-            font-family: "Trebuchet MS", serif;
-            margin-top: 20px;
-        }
-
-        .homeinfohead {
-            font-weight: bold;
-            font-family: "Trebuchet MS", serif;
-            display: flex;
-            justify-content: center;
-        }
-
-        .homecontainer {
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
-        }
-
-        .homebutton {
-            background-color: #fdbe00;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5%;
-        }
-
-        .buttoncontainer {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 30px;
-        }
-
-        .buttoncontainer a {
-            text-decoration: none;
-            transition: all 250ms;
-            font-weight: bold;
-            font-family: "Roboto Condensed", sans-serif;
-            color: white;
-            margin-top: auto;
-            margin-bottom: auto;
-            background-color: #fdbe00;
-            border: none;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5%;
-        }
-
-        .buttoncontainer a:hover {
-            transform: scale(1.1);
-            color: black;
-        }
-
-        .media {
-            width: 50px;
-            height: 50px;
-            border-radius: 5%;
-            padding: 5px
-        }
-
-        .footer {
-            background-color: #777777;
-            height: 25em;
-            display: flex;
-            justify-content: center;
-        }
-
-        .vl {
-            border-left: 2px solid black;
-            height: 20em;
-        }
-
-        .footercontainer {
-            padding: 20px;
-            margin: auto;
-        }
-
-        .footercontent {
-            text-align: center;
-        }
-
-        .footerheader {
-            display: flex;
-            justify-content: center;
-            margin: auto;
-        }
-
-        .footerhomebutton {
-            background-color: #fdbe00;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5%;
-            height: fit-content;
-            text-align: center;
-        }
-
-        .footerbuttoncontainer {
-            display: flex;
-            justify-content: center;
-            padding: 10px 20px;
-        }
-
-        .footerbuttoncontainer a {
-            text-decoration: none;
-            transition: all 250ms;
-            font-weight: bold;
-            font-family: "Roboto Condensed", sans-serif;
-            color: white;
-            margin-top: auto;
-            margin-bottom: auto;
-            background-color: #fdbe00;
-            border: none;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5%;
-        }
-
-        .footerbuttoncontainer a:hover {
-            transform: scale(1.1);
-            color: black;
-        }
-
-        .footeraddresscontainer {
-            background-color: #fdbe00;
-            margin: 20px;
-            border-radius: 5px;
-        }
-
-        .footeraddresscontainertextbox {
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-    </style>
+    <link href="main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -245,121 +46,66 @@
 
 
 
-
-
-
-
-
-
-
-    <div class="footer">
-        <div class="footercontainer">
-            <div class="footercontent">
-                <table>
-                    <tr>
-                        <td colspan="2">Follow us</td>
-                        <td rowspan="5" class="vl"></td>
-                        <td>nav</td>
-                        <td rowspan="5" class="vl"></td>
-                        <td>address</td>
-                    </tr>
-
-                    <tr>
-                        <td> <a href="#"><img
-                                    src="https://media.istockphoto.com/id/1193591781/photo/obedient-dog-breed-welsh-corgi-pembroke-sitting-and-smiles-on-a-white-background-not-isolate.jpg?s=1024x1024&w=is&k=20&c=myYj-W8qARuAaO8h5N6cpWFuA-UPfSNiNVlBjQh4ZkE="
-                                    alt="Company Logo" class="media"></a></td>
-                        <td>
-                            <div class="footerbuttoncontainer">
-                                <a href="#" class="footerhomebutton">Learn More</a>
-                            </div>
-                        </td>
-                        <td colspan="" rowspan="2" style="text-align: center;">
-                            <div class="footerbuttoncontainer">
-                                <a href="#" class="footerhomebutton">Learn More</a>
-                            </div>
-                            <div class="footerbuttoncontainer">
-                                <a href="#" class="footerhomebutton">Learn More</a>
-                            </div>
-                        </td>
-                        <td rowspan="4" style="text-align: center;">
-                            <div class="footeraddresscontainer">
-                                <div class="footeraddresscontainertextbox">
-                                    <p>2 KAKI BUKIT VIEW #05-00<br>KAKI BUKIT TECHPARK 2<br>Singapore 415942</p>
-                                    <p>Tel: 67478633<br>Fax: 67481183</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td> <a href="#"><img
-                                    src="https://media.istockphoto.com/id/1193591781/photo/obedient-dog-breed-welsh-corgi-pembroke-sitting-and-smiles-on-a-white-background-not-isolate.jpg?s=1024x1024&w=is&k=20&c=myYj-W8qARuAaO8h5N6cpWFuA-UPfSNiNVlBjQh4ZkE="
-                                    alt="Company Logo" class="media"></a></td>
-                        <td>
-                            <div class="footerbuttoncontainer">
-                                <a href="#" class="footerhomebutton">Learn More</a>
-                            </div>
-                        </td>
-                    </tr>
-
-
-                    <td> <a href="#"><img
-                                src="https://media.istockphoto.com/id/1193591781/photo/obedient-dog-breed-welsh-corgi-pembroke-sitting-and-smiles-on-a-white-background-not-isolate.jpg?s=1024x1024&w=is&k=20&c=myYj-W8qARuAaO8h5N6cpWFuA-UPfSNiNVlBjQh4ZkE="
-                                alt="Company Logo" class="media"></a></td>
-                    <td>
-                        <div class="footerbuttoncontainer">
-                            <a href="#" class="footerhomebutton">Learn More</a>
-                        </div>
-                    </td>
-                    <td colspan="" rowspan="2">
-                        <div class="footerbuttoncontainer">
-                            <a href="#" class="footerhomebutton">Learn More</a>
-                        </div>
-                        <div class="footerbuttoncontainer">
-                            <a href="#" class="footerhomebutton">Learn More</a>
-                        </div>
-                    </td>
-
-                    </tr>
-
-                    <tr>
-                        <td> <a href="#"><img
-                                    src="https://media.istockphoto.com/id/1193591781/photo/obedient-dog-breed-welsh-corgi-pembroke-sitting-and-smiles-on-a-white-background-not-isolate.jpg?s=1024x1024&w=is&k=20&c=myYj-W8qARuAaO8h5N6cpWFuA-UPfSNiNVlBjQh4ZkE="
-                                    alt="Company Logo" class="media"></a></td>
-                        <td>
-                            <div class="footerbuttoncontainer">
-                                <a href="#" class="footerhomebutton">Learn More</a>
-                            </div>
-                        </td>
-                    </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-                </table>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
+
+
+
+<footer>
+    <!-- nav for footer-->
+    <div class="fsections" class="footernav">
+        <h2>Corgitech</h2>
+        <ul >
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">CorgiVPN</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>     
+    </div>
+        
+
+    <!--Vertical Line-->
+    <div class="vl"></div>
+
+    <!-- Socials section of footer-->
+    <div class="fsections" id="socials">
+        <h2>Follow us on:</h2>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"> <label for="ighandle">@CorgiTech</label>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg"> <label for="twthandle">@CorgiTech</label>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"> <label for="ighandle">@CorgiTech</label>
+
+    </div>
+
+    <!--Vertical Line-->
+    <div class="vl"></div>
+
+    <!--Location section of footer-->
+    <div class="fsections" >
+        <h2>Find Us</h2>
+            
+        <p id="footercontact">
+            Tel: 6389 2000 (24-hour hotline)<br>
+            Email: help@corgitech.xyz<br>
+            <br>
+            <b>Corgitech Headquaters</b><br>
+            10 Buangkok View<br>
+            Buangkok Green Medical Park<br>
+            Singapore 539747<br>
+                
+        </p>    
+
+
+    </div>
+</footer>
+
 
 </html>

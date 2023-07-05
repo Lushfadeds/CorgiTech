@@ -2,27 +2,39 @@
 
 <html>
     <head>
+        <title></title>
         <link href="main.css" rel="stylesheet">
         <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             article{
+                width: 90%;
+                margin: auto;
+                font-family: Verdana;
+            }
+            .vismotto{
                 display:flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
             }
+            article hr{
+                border-top: 2px solid white;
+                width:100%;
+                margin: 10px 0px;
+            }
+            article h3{
+                color:#666;
+                font-size:34px;
 
-            .heading{
-                /* display:flex; */
+            }
+
+            .heading-1{
                 padding:60px;
                 font-size: 60px;
                 width: 60%;
-                /* text-align: center; */
-                
             }
-            .vis-content{
-                /* display:flex; */
+            .content-1{
                 padding:60px;
                 border: 2px solid black;
                 font-size: 24px;
@@ -30,28 +42,56 @@
             }
             .vision{
                 display:flex;
-                font-family: Verdana;
                 padding:20px;
-                /* border-bottom: 2px solid black; */
                 width:95%;
                 height:100%;
                 flex-direction: row;
             }
-            .history{
+            .motto{
                 display:flex;
-                font-family: Verdana;
                 padding:20px;
-                /* border-bottom: 2px solid black; */
                 width:95%;
                 height:100%;
                 flex-direction: row-reverse;
             }
-            @media (max-width:1000px){
+            @media (max-width:1490px){
                 .vision{
                     flex-direction: column;
                 }
+                .motto{
+                    flex-direction: column;
+                }
+                .heading-1{
+                    width:fit-content;
+                    font-size:40px ;
+                    padding:8px;
+                }
+                .content-1{
+                    padding:8px;
+                }
             }
-
+            .history{
+                padding: 25px;
+            }
+            .heading-2{
+                text-align: left;
+                padding: 20px 0px;
+                width: 100%;
+            }
+            .heading-2 h1{
+                font-size: 50px;
+            }
+            .heading-2 p{
+                font-size: 24px;
+                color:#666;
+            }
+            .content-2{
+                padding: 10px 0px;
+                color:black;
+            }
+            .content-2 p{
+                font-size: 22px;
+            }
 
         </style>
     </head>
@@ -78,22 +118,44 @@
         </header>
 
         <article>
-            <section class="vision">
-                <div class="heading">
-                    <h1>Company <span style="color:#fd8700">Vision</span></h1>
-                </div>
-                <div class="vis-content">
-                    <h3> Building the future of online security </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </section>
+            <div class="vismotto">
+                <section class="vision">
+                    <div class="heading-1">
+                        <h1>Company <span style="color:#fd8700">Vision</span></h1>
+                    </div>
+                    <div class="content-1">
+                        <h3> Building the future of online security </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </section>
+                <section class="motto">
+                    <div class="heading-1">
+                        <h1>Company <span style="color:#fd8700">Motto</span></h1>
+                    </div>
+                    <div class="content-1">
+                        <h3> Money First, Privacy Second </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </section>
+
+            </div>
+            
+            <hr>
             <section class="history">
-                <div class="heading">
-                    <h1>Our <span style="color:#fd8700">History</span></h1>
+                <div class="heading-2">
+                    <h1>Corgitech History: <span style="color:#fd8700;">Humble Beginnings</span> </h1>
+                    <p>Founded in 2001, Corgitech has a reputation for <i>premium quality</i> and <i>service</i>.</p>
                 </div>
-                <div class="vis-content">
-                    <h3> Building the future of online security </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="content-2">
+                    <h3>Early Years</h3>
+                    <p>
+                        Our founders, Wang Jun Jie and Chen Jun Jie, were students in the prestigious ITE North before founding this company. Corgitech was then named the CORGI Security Company. The duo's intended to start a security firm after the September 12 terrorist attacks in Singapore. They envisioned a future where Singapore's Elites are protected from impoverished and savagous peasants. With a strong belief in the idea and principles of the organization, they decided to drop out of school and persue the business.
+                    </p>
+                    <br>
+                    <h3>CORGI Security Co.</h3>
+                    <p>The CORGI Security Company was a private security business that provided security for VIPs. Its headquaters opened in Geylang and operations begun. </p>
+                    <img src="/media/corgitech banner.png" > <p>This was the logo/banner backthen.</p>
+
                 </div>
             </section>
 

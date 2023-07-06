@@ -188,6 +188,9 @@ footer ul li {
         margin:auto;
         top: 0px;
     }
+    .footer-nav li{
+        padding: 11px;
+    }
 }
 article{
     min-height: 1000px;

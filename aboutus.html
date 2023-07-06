@@ -71,6 +71,9 @@
                 .content-1{
                     padding:8px;
                 }
+                .kp-table{
+                    display: grid;
+                }
             }
             .history{
                 padding: 25px;
@@ -111,6 +114,23 @@
             .hvc{
                 height:135px ;
                 width: 120px;
+            }
+            .kp-table{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+            .kp-table ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                
+            }
+            .kp-table li{
+                list-style: none; 
+                text-align: center;
+                padding:10px;
             }
 
 
@@ -216,24 +236,24 @@
                     <h1> Key <span style="color:#fd8700;">Personnel</span></h1>
                 </div>
                 <div class="content-2">
-                    <table>
-                        <tr>
-                            <td>img here</td>
-                            <td>img here</td>
-                            <td>img here</td>
-                        </tr>
-                        <tr>
-                            <th> CEO</th>
-                            <th> CTO </th>
-                            <th> CFO </th>
-                        </tr>
-                        <tr>
-                            <td> Tan Jun Jie </td>
-                            <td> Lim Jun Jie </td>
-                            <td> Chan Jun Jie </td>
-                        </tr>
-                        
-                    </table>
+                    <div class="kp-table">
+                        <ul>
+                            <li><img class="hvc" src="media/sangnillautama.jpg"></li>
+                            <li>CEO <br> Tan Jun Jie</li>
+                            
+                        </ul>
+                        <ul>
+                            <li><img class="hvc" src="media/sangnillautama.jpg"></li>
+                            <li>CTO <br> Lim Jun Jie</li>
+
+                        </ul>
+                        <ul>
+                            <li><img class="hvc" src="media/sangnillautama.jpg"></li>
+                            <li>CFO <br> Chan Jun Jie</li>
+                        </ul>
+                    </div>    
+                    
+
                 </div>
             </section>
             

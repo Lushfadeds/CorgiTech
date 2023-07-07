@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family:Verdana, butthole;
 }
+article{
+    width: 90%;
+    margin: auto;
+    
+}
 
 .company-name {
     margin: 8px;

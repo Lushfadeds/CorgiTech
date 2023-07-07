@@ -194,4 +194,12 @@ footer ul li {
 }
 article{
     min-height: 1000px;
+}
+table{
+    display: flex;
+    /* padding:10px; */
+    /* text-align: center; */
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }   

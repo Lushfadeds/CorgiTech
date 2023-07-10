@@ -231,3 +231,14 @@ hr {
     text-decoration: none;
     color:black;
 }
+.button-buy a{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+    background-color: #fdbe00;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    
+}

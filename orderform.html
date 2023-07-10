@@ -29,7 +29,62 @@
         </header>
 
         <article >
-            
+            <form>
+
+                <table border="0" align="center">
+                
+                       <caption>Order Form:</caption>
+                       <tr>
+                           <td>Name:</td>
+                           <td><input type="text" name="firstname" placeholder="First" required></td>
+                           <td><input type="text" name="lastname" placeholder="Last" required></td>
+                       </tr> 
+                       
+                       <tr>
+                           <td>Phone number:</td>
+                           <td><input type="text" placeholder="Country" required></td>
+                           <td><input type="text" placeholder="Phone Number" required></td>
+                       </tr> 
+                       
+                       <tr>
+                           <td>Payment:</td>
+                           <td><input type="text" placeholder="Cardholder's Name" required>
+                       </tr>
+                                           
+                       <tr>
+                           <td></td>
+                           <td><input type="text" placeholder="Card Number" required></td>
+                       </tr>
+                
+                       <tr>
+                           <td></td>
+                           <td>Expiry</td>
+                       </tr>
+                
+                       <tr>
+                           <td></td>
+                           <td><input type="month" required></td>
+                           <td><input type="text" placeholder="CVC" required></td>
+                       </tr> 
+                       
+                       <tr>
+                           <td>Pricing plan:</td>
+                           <td><select name="Princing Plan">
+                               <option>$69 (1 Month)</option>
+                               <option>$169 (3 Months)</option>
+                               <option>$269 (6 Months)</option>
+                               <option>$369 (1 Year)</option>
+                               </select></td>
+                       </tr> 
+                       
+                       <tr>
+                           <td colspan="2" align="right">
+                           <input type="submit" value="order"/> &nbsp
+                           <input type="reset" value="reset"/></td>
+                       </tr>
+                       
+                </table>
+                </form>
 
         </article >            
 
@@ -62,62 +117,7 @@
                 </div>
             </div>    
         </footer>
-        <form>
-
-            <table border="0" align="center">
-            
-                   <caption>Order Form:</caption>
-                   <tr>
-                       <td>Name:</td>
-                       <td><input type="text" name="firstname" placeholder="First" required></td>
-                       <td><input type="text" name="lastname" placeholder="Last" required></td>
-                   </tr> 
-                   
-                   <tr>
-                       <td>Phone number:</td>
-                       <td><input type="text" placeholder="Country" required></td>
-                       <td><input type="text" placeholder="Phone Number" required></td>
-                   </tr> 
-                   
-                   <tr>
-                       <td>Payment:</td>
-                       <td><input type="text" placeholder="Cardholder's Name" required>
-                   </tr>
-                                       
-                   <tr>
-                       <td></td>
-                       <td><input type="text" placeholder="Card Number" required></td>
-                   </tr>
-            
-                   <tr>
-                       <td></td>
-                       <td>Expiry</td>
-                   </tr>
-            
-                   <tr>
-                       <td></td>
-                       <td><input type="month" required></td>
-                       <td><input type="text" placeholder="CVC" required></td>
-                   </tr> 
-                   
-                   <tr>
-                       <td>Pricing plan:</td>
-                       <td><select name="Princing Plan">
-                           <option>$69 (1 Month)</option>
-                           <option>$169 (3 Months)</option>
-                           <option>$269 (6 Months)</option>
-                           <option>$369 (1 Year)</option>
-                           </select></td>
-                   </tr> 
-                   
-                   <tr>
-                       <td colspan="2" align="right">
-                       <input type="submit" value="order"/> &nbsp
-                       <input type="reset" value="reset"/></td>
-                   </tr>
-                   
-            </table>
-            </form>
+        
     </body>
 
 </html>

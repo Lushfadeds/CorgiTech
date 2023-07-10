@@ -22,7 +22,6 @@
             article h3{
                 color:#666;
                 font-size:30px;
-
             }
 
             .heading-1{
@@ -70,6 +69,13 @@
                 .kp-table{
                     display: grid;
                 }
+                .other-cards ul{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .other-cards li{
+                    width: 90% !important;
+                }
             }
             .history{
                 padding: 25px;
@@ -97,17 +103,6 @@
                 font-size: 16px;
                 padding: 1px;
             }
-            /* .content-2 table{
-                display: block;
-                padding:10px;
-                text-align: center;
-                width: 100%;
-                overflow-x: auto;
-                white-space: nowrap;
-                justify-content: center;
-                max-width: fit-content;
-                margin: auto;
-            } */
             .content-2 td{
                 padding: 10px 30px;
             }
@@ -123,17 +118,22 @@
                 min-width: 275px;
                 min-height: 75px;
             }
+            .other-cards{
+                margin-top: 50px;
+            }
             .other-cards ul{
                 display: flex;
                 justify-content: space-evenly;
             }
             .other-cards li{
                 list-style-type:none;
-                width: 20%;
+                width: 40%;
                 border: 1px solid black;
                 padding: 15px 20px 35px 20px;
+                margin: 10px;
                 border-radius: 40px;
             }
+
 
 
         </style>
@@ -195,92 +195,18 @@
 
                     <li>
                         <h2>Key Personnel</h2>
+                        <p>Meet the people that run our passionate and innovative company.</p>
+                        <br><br>
+                        <span class="button-css button-buy"><a href="aboutus/keypersonnel.html">Read More</a></span>
                     </li>
                 </ul>
             </section>
 
-            <section class="history">
-                <div class="heading-2">
-                    <h1>Corgitech History: <span style="color:#fd8700;">Humble Beginnings</span> </h1>
-                    <p>Founded in 2001, Corgitech has a reputation for <i>premium quality</i> and <i>service</i>.</p>
-                </div>
-                <div class="content-2">
-                    <!-- First section talking about Corgitech founding -->
-                    <h3>Early Years</h3>
-                    <p>
-                        Our founders, Wang Jun Jie and Chen Jun Jie, were students in the prestigious ITE North before founding this company. Corgitech was then named the CORGI Security Company. The duo's intended to start a security firm after the September 12 terrorist attacks in Singapore. They envisioned a future where Singapore's Elites are protected from impoverished and savagous peasants. With a strong belief in the idea and principles of the organization, they decided to drop out of school and persue the business.
-                    </p>
-                    <br>
-                    <!-- second section for comapny history -->
-                    <h3>CorgiSecurity Co.</h3>
-                    <p>The CORGI Security Company was a private security business that provided security for VIPs. Its headquarters opened in Geylang and operations begun. </p>
-                    <br>
-                    <span style="display:flex; flex-direction: column; align-items: center;">
-                        <img src="media/cs-banner.png" class="cs-banner"> <p>This was the logo/banner back then.</p>
-                    </span>
-                    
-                    <br>
-                    <p>The business venture was very prosperous and generated a lot of wealth for the company. It had many high profile/valued clienteles: </p>
-                    <br>
-                    <table >
-                        <tr>
-                            <td><img class="hvc" src="media/sirstamfordraffles.jpg"></td>
-                            <td><img class="hvc" src="media/sangnillautama.jpg"></td>
-                            <td><img class="hvc" src="media/yusofishak.jpg"></td>
-                        </tr>
-                        <tr>
-                            <td> Sir Stamford Raffles</td>
-                            <td> Sang Nila Utama</td>
-                            <td> Yusof Bin Ishak</td>
-                        </tr>
-                        
-                    </table>
-                    
-                    <br>
-                    <!-- third part transitioning from physical security to online security -->
-                    <h3>From <i>Physical</i> to <i>Online</i> Security</h3>
-                    <p>When there is success, failure always follows. The Covid-19 Pandemic resulted in a massive drop in profits due to the reduced need for personal security. Without cashflow, the company found themselves to be yet again at the brink of bankruptcy. At the same time, the new generation of company leaders took over; And they knew they had to move online. It was at this moment where the company CEO, Tan Jun Jie, came out with a brilliant idea to change the company's focus into supplying Online security through VPNs.
-                    </p>
-                    <br>
-                    <!-- fourth part talking abt quality -->
-                    <h3>Commitment to Quality</h3>
-                    <p>Our previous clientele chose us for the premium and quality services that we provide. We are committed to maintaining that reputation with our current lines of products. We promise quality that not only rivals other products in the market, but also dominate them. We are a key innovator in the industry and will continue to innovate, building the future of online security.
-                    </p>
-                </div>
-            </section>
+            
 
             <hr>
 
-            <section class="keypersonnel">
-                <div class="heading-2">
-                    <h1> Key <span style="color:#fd8700;">Personnel</span></h1>
-                </div>
-                <div class="content-2">
-                    
-                        <table>
-                            <tr>
-                                <td><img class="hvc" src="media/sirstamfordraffles.jpg"></td>
-                                <td><img class="hvc" src="media/sangnillautama.jpg"></td>
-                                <td><img class="hvc" src="media/yusofishak.jpg"></td>
-                            </tr>
-                            <tr>
-                                <td> <b>CEO</b></td>
-                                <td> <b>CTO</b></td>
-                                <td> <b>CFO</b> </td>
-                            </tr>
-                            <tr>
-                                <td> Tan Jun Jie</td>
-                                <td> Lim Jun Jie</td>
-                                <td> Chan Jun Jie</td>
-                            </tr>
-                            
-                        </table>
-                    
-                </div>
-
-            </section>
             
-
         </article>            
 
         <footer>

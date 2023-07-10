@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family:Verdana, butthole;
 }
+article{
+    width: 90%;
+    margin: auto;
+    
+}
 
 .company-name {
     margin: 8px;
@@ -194,4 +199,35 @@ footer ul li {
 }
 article{
     min-height: 1000px;
-}   
+}
+table{
+    display: block;
+    padding:10px;
+    text-align: center;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: center;
+    max-width: fit-content;
+    margin: auto;
+}
+hr {
+    border-top: 1px solid white;
+    width:100%;
+    margin: 10px 0px;
+}
+.button-css a:hover {
+    background-color:#d1d1d1
+}
+.button-css a:active{
+    background-color:#999;
+    box-shadow: 0 2px #666;
+    transform:translateY(4px);
+}
+.button-css a:visited {
+    text-decoration: none;
+}
+.button-css {
+    text-decoration: none;
+    color:black;
+}

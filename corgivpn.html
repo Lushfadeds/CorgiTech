@@ -6,6 +6,9 @@
         <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            h1{
+                font-size: 40px;
+            }
             .product-1{
                 display: flex;
                 padding:10px;
@@ -23,6 +26,9 @@
             }
             .product-1 p{
                 font-size: 22px;
+                margin-top: 20px;
+                margin-bottom: 170px;
+                padding:5px;
                 /* width: 50%; */
             }
             .product-1-1{
@@ -92,6 +98,7 @@
             }
             .product-2 p{
                 padding:5px;
+                
             }
             .product-3 {
                 width:95%;
@@ -168,7 +175,6 @@
                 text-align: left;
                 display: flex;
                 font-size: 30px;
-
             }
 
             @media only screen and (max-width: 768px) {
@@ -181,7 +187,38 @@
                 color: black;
 
             }
-            
+            .pricing {
+                font-size:25px;
+                width:95%;
+                margin:auto;
+            }
+            .pricing h1{
+                font-size:40px;
+            }
+            .pricing table{
+                border-collapse: collapse;
+            }
+            .pricing td {
+                padding: 10px;
+                background-color: #edebeb;
+                border: 1px solid black;
+                
+            }
+            .pricing .feature{
+                text-align: left;
+                width:20%;
+                border: 0px solid black !important;
+                font-size:18px;
+            }
+            .pricing-feature-blank{
+                background-color: white !important;
+                border: 0px solid black !important;
+            }
+            .pricing-feature-highlight{
+                background-color: #fd8700 !important;
+                color:white;
+            }
+
         </style>
     </head>
 
@@ -212,7 +249,8 @@
                 <!-- <img src="media/corgivpn.jpg" > -->
                 <div class="product-1-1">
                     <h1>CorgiVPN</h1>
-                    <div class="product-1-2">
+                    <p>Start using the world's Premier VPN service. </p>
+                    <!-- <div class="product-1-2">
                         <h2>Subscription Plans:</h2>
                         <ul>
                             <li>
@@ -226,7 +264,7 @@
                                 <b>$69</b> <br> per <br> Month
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="download-buttons button-css">
                         <span class="button-buy"><a href="orderform.html">Buy Now</a> </span>
                         <a href="prevcustomer.html">Already a customer?</a>
@@ -236,6 +274,7 @@
 
             </section>
             <hr>
+
             <section class="review-section">
                 <div class="home-section-review-header">
                     <h1>Reviews:</h1>
@@ -296,6 +335,56 @@
                     </div>
                 </div>
             </section>
+            <hr>
+
+            <section class="pricing">
+                <h1>Subscription <span style="color:#fd8700">plans</span>:</h1> 
+                <table>
+                    <tr>
+                        <td class="pricing-feature-blank"></td>
+                        <td class="pricing-feature-blank"></td>
+                        <td class="pricing-feature-highlight">Most Popular</td>
+
+                    </tr>
+                    <tr>
+                        <td class="pricing-feature-blank"></td>
+                        <td>Low-SES Tier <br> <b>$69</b> <br> Per Month</td>
+                        <td>High-SES Tier <br> <b>$369</b> <br> Per Year</td>
+                        <td>Middle Class Tier <br> <b>$69</b> <br> Per Month</td>
+                    </tr>
+                    <tr>
+                        <td class="feature"> Worldwide Coverage</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="feature"> Swift Speed</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="feature"> Advanced Privacy</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Elite Status</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Receive an actual product</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+
+            </section>
             <!-- <section class="product-2">
                 <ul>
                     <li>
@@ -315,7 +404,7 @@
 
             </section> -->
             <hr>
-            <section class="product-3 button-css">
+            <!-- <section class="product-3 button-css">
                 <h2>Why everyone should use a <span style="color:#fd8700">VPN</span>?</h2> 
                 <br>
                 <p>
@@ -330,7 +419,7 @@
                 <br>
                 <a class="button-read" href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-vpn/" target="_blank">Read More</a>
             </section>
-            <hr>
+            <hr> -->
             <section class="product-3">
                 <h2>Why you should use Corgitech's <span style="color:#fd8700">CorgiVPN</span>?</h2> 
                 <br>

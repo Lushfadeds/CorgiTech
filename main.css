@@ -232,13 +232,28 @@ hr {
     color:black;
 }
 .button-buy a{
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 15px;
     margin: 0px 10px;
     font-size: 20px;
     background-color: #fdbe00;
     text-decoration: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: black;
     
+}
+h1{
+    font-family: 'Trebuchet MS';
+}
+h2{
+    font-family: 'Trebuchet MS';
+}
+h3{
+    font-family: 'Trebuchet MS';
+}
+h4{
+    font-family: 'Trebuchet MS';
+}
+h5{
+    font-family: 'Trebuchet MS';
 }

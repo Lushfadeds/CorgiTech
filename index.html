@@ -21,20 +21,25 @@
         }
 
         .home-section-header h1 {
-            font-size: 60px;
+            font-size: 80px;
         }
 
         .home-section-text {
-            width: 80%;
+            width: 60%;
             height: 100%;
             padding: 10px;
             font-size: 20px;
+        }
+        .home-section-text li{
+            padding: 2px 0px;
+            margin: 8px;
+            width: fit-content;
         }
 
         .home-section-buy-now {
             flex-direction: row;
             display: flex;
-            justify-content: flex-end;
+            /* justify-content: flex-end; */
             font-size: 24px;
             align-items: center;
         }
@@ -44,85 +49,6 @@
             background-color: #fdbe00;
             border-radius: 30px;
             font-size: 24px;
-        }
-
-        .home-floating-review-section {
-            display: flex;
-            /* flex-direction: row-reverse; */
-            justify-content: center;
-            margin: 1%;
-            align-items: center;
-        }
-
-        .home-floating-review-container {
-            background-color: #edebeb;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 20px;
-            color:black;
-            width:300px;
-            height: 200px;
-        }
-
-        .home-line-break {
-            margin: top 5% bottom 5%;
-        }
-
-        .review-box-content-layout {
-            display: flex;
-            margin: 1%;
-            flex-direction: column;
-        }
-
-        .home-review-box-header {
-            /* text-decoration: underline; */
-            font-weight: bold;
-            font-size: 20px;
-            
-        }
-
-        .home-review-text {
-            
-            width: 100%;
-            height: 100%;
-            padding-top: 15px;
-        }
-
-        .rating {
-            color: black;
-            font-size: 24px;
-        }
-
-        .star {
-            display: inline-block;
-            margin-right: -7px;
-        }
-
-
-        .review-section {
-            display: flex;
-            margin: 1%;
-            flex-direction: column;
-        }
-
-        .home-section-review-header {
-            margin: 1%;
-            /* text-decoration: underline; */
-            text-align: left;
-            display: flex;
-            font-size: 30px;
-
-        }
-
-        @media only screen and (max-width: 768px) {
-            .home-floating-review-section {
-                flex-direction: column;
-            }
-        }
-
-        .home-review-box-header-color {
-            color: black;
-
         }
 
         .home-satisfied-customers {
@@ -156,21 +82,27 @@
             width: 100%;
             padding:10px;
         }
-
-
-
         .home-satisfied-customers-reviews {
             display: flex;
             justify-content: center;
             margin: 5%;
         }
 
-        @media only screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+            .home-section-text{
+                width: auto;
+            }
             .home-satisfied-customers-reviews-layout {
                 flex-direction: column;
             }
             .home-satisfied-customers-header-text{
                 flex-direction: column;
+            }
+            .home-features-picleft{
+                flex-direction: column !important;
+            }
+            .home-features-picright{
+                flex-direction: column !important;
             }
         }
 
@@ -186,6 +118,34 @@
         }
         .home-satisfied-customers td{
             padding:50px;
+        }
+
+        .home-features-picleft {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-features-picright {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-features-words{
+            margin: 30px 50px;
+            border: 1px solid black;
+            padding: 100px 20px;
+        }
+        .home-features-words h2{
+            font-size: 50px;
+        }
+        .home-features-words p{
+            font-size:30px;
+        }
+        .home-features img{
+            width:280px;
+            height:280px;
         }
 
     </style>
@@ -224,94 +184,50 @@
 
             </div>
             <div class="home-section-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    <ul>
+                        <li>Protect youself from online terrorist.</li>
+                        <li>Hide from the malicious government.</li>
+                        <li>Use the best VPN service in the world.</li>
+                    </ul>
+                </p>
             </div>
 
 
             <div class="home-section-buy-now button-buy button-css" >
                 
-                <a href="corgivpn.html">Learn More</a>
+                <a href="corgivpn.html">Get CorgiVPN</a>
             </div>
             <hr class="home-line-break">
 
         </section>
-
-        <section class="review-section">
-            <div class="home-section-review-header">
-                <h1>Reviews:</h1>
+            
+        <section class="home-features">
+            <div class="home-features-picleft">
+                <img src="media/corgitechlogo01.jpg">
+                <div class="home-features-words">
+                    <h2>Worldwide <span style="color:#fd8700">Coverage</span></h2>
+                    <p>With servers hosted in every continent on earth, users can connect to anywhere they want. </p>
+                </div>
             </div>
-
-
-            <div class="home-floating-review-section">
-                <div class="home-floating-review-container">
-                    <section class="review-box-content-layout">
-                        <div>
-                           <span class="home-review-box-header"> The Verge</span>
-                            <div class="rating">
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                            </div>
-
-
-                        </div>
-                        <div class="home-review-text">
-                            <p>"Best VPN in the World"</p>
-                        </div>
+            <div class="home-features-picright">
+                <img src="media/corgitechlogo01.jpg">
+                <div class="home-features-words">
+                    <h2>Swift <span style="color:#fd8700">Speed</span></h2>
+                    <p>Powered by the blood of Taylor Swift, CorgiVPN’s network is the fastest in the market according to a self-done survey. </p>
                 </div>
-
-                <div class="home-floating-review-container">
-                    <section class="review-box-content-layout">
-                        <div >
-                           <span class="home-review-box-header">The Straits Times</span>
-                            <div class="rating">
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                            </div>
-
-
-                        </div>
-                        <div class="home-review-text">
-                            <p>"This VPN saved me from a fire"</p>
-                        </div>
-                </div>
-
-
-
-                <div class="home-floating-review-container">
-                    <section class="review-box-content-layout">
-                        <div >
-                           <span class="home-review-box-header"> Channel News Asia</span>
-                            <div class="rating">
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                                <div class="star">&#9733;</div>
-                            </div>
-
-
-                        </div>
-                        <div class="home-review-text">
-                            <p>"I got eras tour tickets with CorgiVPN"</p>
-                        </div>
-                </div>
-
-
             </div>
-
+            <div class="home-features-picleft">
+                <img src="media/corgitechlogo01.jpg">
+                <div class="home-features-words">
+                    <h2>Advanced <span style="color:#fd8700">Privacy</span></h2>
+                    <p>Using VPN encryption, no one can view or use your internet traffic.</p>
+                </div>
+            </div>
 
         </section>
 
-
-
-        <section class="home-satisfied-customers">
+        <!-- <section class="home-satisfied-customers">
             <div class="home-section-review-header">
                 <h1>Satisfied customers</h1>
             </div>
@@ -330,11 +246,8 @@
                 </table>
 
             </div>
-            
 
 
-
-<!-- 
             <div class="home-satisfied-customers">
                 <div class="home-satisfied-customers-reviews-layout-row">
                     <div class="home-satisfied-customers-reviews-layout">
@@ -372,18 +285,6 @@
 
                 </div> -->
 
-
-
-
-
-
-
-
-
-
-
-
-                </table>
 
             </div>
         </section>

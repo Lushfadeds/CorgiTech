@@ -27,23 +27,17 @@
                 width: 90vw;
             }
             .download-buttons{
-                padding: 10px 0px;
+                margin: 20px 0px;
             }
-            .download-buttons button{
+            .button-buy{
                 border-radius: 20px;
                 padding: 10px;
-                margin: 10px 10px 0px 0px;
+                margin-right: 10px;
                 font-size: 20px;
                 background-color: #fdbe00;
-            }
-            .download-buttons button:hover {
-                background-color:#d1d1d1
-            }
-
-            .download-buttons button:active{
-                background-color:#999;
-                box-shadow: 0 2px #666;
-                transform:translateY(4px);
+                text-decoration: none;
+                border: 1px solid black;
+                
             }
             .product-1-2{
                 max-width:427px;
@@ -90,7 +84,21 @@
             .product-2 p{
                 padding:5px;
             }
-
+            .product-3 {
+                width:95%;
+                height: fit-content;
+                margin: auto;
+                padding: 10px
+            }
+            .button-read{
+                border-radius: 5px;
+                padding: 10px;
+                border:1px solid black;
+                font-size: 12px;
+                background-color: #fdbe00;
+                text-decoration: none;
+            }
+            
         </style>
     </head>
 
@@ -123,7 +131,7 @@
                     <h1>CorgiVPN</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="download-buttons">
-                        <button>Buy Now</button>
+                        <a class="button-buy button-css" href="#">Buy Now</button>
                         <a href="prevcustomer.html">Already a customer?</a>
                     </div>
                 </div>
@@ -161,8 +169,21 @@
             </section>
             <hr>
             <section class="product-3">
-                <h2>Why everyone should use a <span style="color:#fd8700">VPN</span>?</h2>
+                <h2>Why everyone should use a <span style="color:#fd8700">VPN</span>?</h2> 
+                <br>
+                <p>
+                    A VPN, which stands for <em>virtual private network</em>, establishes a connection between your device and encrypted Corgitech servers. 
+                    A digital tunnel is created that lets you <em>evade geo-blocked websites and firewalls</em> on the internet. 
+                    It protects its users by encrypting their data and masking their IP address, leaving their browsing history and location untraceable. 
+                    <br>
+                    <br>
+                    This greater anonymity allows for greater privacy, as well as greater freedom for those who wish to access blocked or region-bound content. 
+                    This ensures that your online experiences are private, protected, and more secure.
+                </p>
+                <br>
+                <a class="button-read button-css" href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-vpn/" target="_blank">Read More</a>
             </section>
+            <hr>
         </article >            
 
         <footer>

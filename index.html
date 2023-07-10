@@ -67,7 +67,7 @@
         }
 
         .home-floating-review-container {
-            background-color: red;
+            background-color: grey;
             padding: 5%;
             border-radius: 10px;
             margin: 20px;
@@ -120,17 +120,69 @@
 
         }
 
-        /* Media queries for responsiveness */
         @media only screen and (max-width: 768px) {
             .home-floating-review-section {
                 flex-direction: column;
             }
         }
+
+        .home-review-box-header-color {
+            color: black;
+
+        }
+        
+
+
+
+
+
+        .home-satisfied-customers {
+            flex-direction: row-reverse;
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+            background-color: beige;
+            border: 1px solid #8b8b8b;
+
+        }
+
+        .home-satisfied-customers-reviews-layout {
+            display: flex;
+            margin: 8%;
+            flex-direction: row;
+            gap: 10pxpx;
+        }
+        .home-satisfied-customers-header{
+                        font-size: 40px;
+
+        }
+        .home-satisfied-customers-header-text{
+            width: 100%;
+            height: 100%;
+            padding: 1px;
+        }
+
+
+
+        .home-satisfied-customers-reviews {
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .home-satisfied-customers-reviews-layout {
+                flex-direction: column;
+            }
+        }
+
+        .home-satisfied-customers-reviews-layout-row {
+            flex-direction: column;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Rest of your HTML content -->
 </body>
 
 </html>
@@ -202,16 +254,18 @@
             <div class="home-floating-review-section">
                 <div class="home-floating-review-container">
                     <section class="review-box-content-layout">
-                        <div >
-                           <span class="home-review-box-header"> jessica</span>
+                        <div>
+                            <div class="home-review-box-header"><span class="home-review-box-header-color">
+                                    <h2>barbara</h2>
+                                </span></div>
                             <div class="rating">
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
-                             </div>
-                             
+                            </div>
+
 
                         </div>
                         <div class="home-review-text">
@@ -224,16 +278,18 @@
 
                 <div class="home-floating-review-container">
                     <section class="review-box-content-layout">
-                        <div >
-                           <span class="home-review-box-header"> celeste</span>
+                        <div>
+                            <div class="home-review-box-header"><span class="home-review-box-header-color">
+                                    <h2>celest</h2>
+                                </span></div>
                             <div class="rating">
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
-                             </div>
-                             
+                            </div>
+
 
                         </div>
                         <div class="home-review-text">
@@ -248,16 +304,18 @@
 
                 <div class="home-floating-review-container">
                     <section class="review-box-content-layout">
-                        <div >
-                           <span class="home-review-box-header"> janice</span>
+                        <div>
+                            <div class="home-review-box-header"><span class="home-review-box-header-color">
+                                    <h2>shannon</h2>
+                                </span></div>
                             <div class="rating">
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
                                 <div class="star">&#9733;</div>
-                             </div>
-                             
+                            </div>
+
 
                         </div>
                         <div class="home-review-text">
@@ -291,8 +349,9 @@
 
 
 
-
+            <hr class="home-line-break">
         </section>
+
 
 
 
@@ -301,17 +360,70 @@
 
 
         <section class="home-section">
+            <div class="home-section-review-header">
+                <h1>satisfied customers</h1>
+            </div>
+            <div class="home-satisfied-customers-header-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
 
+
+
+
+
+            <div class="home-satisfied-customers">
+                <div class="home-satisfied-customers-reviews-layout-row">
+                    <div class="home-satisfied-customers-reviews-layout">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="home-satisfied-customers-reviews">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        culpa qui officia deserunt mollit anim id</div>
+
+                                </td>
+                                <td>
+                                    <div class="home-satisfied-customers-reviews">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        culpa qui officia deserunt mollit anim id</div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="home-satisfied-customers-reviews">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        culpa qui officia deserunt mollit anim id</div>
+
+                                </td>
+                                <td>
+                                    <div class="home-satisfied-customers-reviews">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                        culpa qui officia deserunt mollit anim id</div>
+
+                                </td>
+                            </tr>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </table>
+
+            </div>
         </section>
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,46 +6,61 @@
         <script src="../main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            .history{
-                padding: 25px;
-            }
             .keypersonnel{
                 padding:25px;
+
             }
-            .heading-2{
+            .kp-heading{
                 text-align: left;
                 padding: 20px 0px;
                 width: 100%;
             }
-            .heading-2 h1{
+            .kp-heading h1{
                 font-size: 40px;
             }
-            .heading-2 p{
+            .kp-heading p{
                 font-size: 20px;
                 color:#666;
             }
-            .content-2{
-                padding: 10px 0px;
-                color:black;
+            .kp-content img{
+                width: 150px;
+                margin-bottom:50px ;
+                /* height: 40px; */
             }
-            .content-2 p{
-                font-size: 16px;
-                padding: 1px;
+            .kp-content ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             }
-            .hvc{
-                height:135px ;
-                width: 120px;
+            .kp-content li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid black;
+                border-radius: 10%;
+                padding:30px;
+                margin: 30px;
+                text-align: center;
             }
-            article h3{
-                color:#666;
-                font-size:30px;
+            .kp-content h2{
+                margin-bottom:20px ;
             }
-            .keypersonnel{
-                padding:25px;
+            .kp-content{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                justify-content: center;
             }
-            .content-2 td{
-                padding: 10px 30px;
+            @media (max-width:1100px){
+                .kp-content ul{
+                    flex-direction:column
+                }
+                .kp-content{
+                    flex-direction: column;
+                }
             }
+
         </style>
     </head>
     <body>
@@ -72,29 +87,38 @@
 
         <article >
             <section class="keypersonnel">
-                <div class="heading-2">
-                    <h1> Key <span style="color:#fd8700;">Personnel</span></h1>
+                <div class="kp-heading">
+                    <h1> Key Personnel</h1>
+                    <p>These are the people who run our company. They provide incredible value, to ensure that we are able to stick to our company values, vision and motto.</p>
                 </div>
-                <div class="content-2">
-                    
-                        <table>
-                            <tr>
-                                <td><img class="hvc" src="../media/sirstamfordraffles.jpg"></td>
-                                <td><img class="hvc" src="../media/sangnillautama.jpg"></td>
-                                <td><img class="hvc" src="../media/yusofishak.jpg"></td>
-                            </tr>
-                            <tr>
-                                <td> <b>CEO</b></td>
-                                <td> <b>CTO</b></td>
-                                <td> <b>CFO</b> </td>
-                            </tr>
-                            <tr>
-                                <td> Tan Jun Jie</td>
-                                <td> Lim Jun Jie</td>
-                                <td> Chan Jun Jie</td>
-                            </tr>
-                            
-                        </table>
+                <div class="kp-content">
+                    <ul>
+                        <li>
+                            <img src="../media/corgitechlogo01.jpg">
+                            <h2>Cheif Executive Officer</h2>
+                            <h3>Tan Jun Jie</h3>
+                        </li>
+                        <li>
+                            <img src="../media/corgitechlogo01.jpg">
+                            <h2>Cheif Executive Officer</h2>
+                            <h3>Tan Jun Jie</h3>
+                        </li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <img src="../media/corgitechlogo01.jpg">
+                            <h2>Cheif Executive Officer</h2>
+                            <h3>Tan Jun Jie</h3>
+                        </li>
+                        <li>
+                            <img src="../media/corgitechlogo01.jpg">
+                            <h2>Cheif Executive Officer</h2>
+                            <h3>Tan Jun Jie</h3>
+                        </li>
+                    </ul>
+                        
                     
                 </div>
 

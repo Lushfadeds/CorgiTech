@@ -28,7 +28,7 @@
         .home-section-text {
             width: 60%;
             height: 100%;
-            padding: 10px;
+            padding: 20px 10px;
             font-size: 20px;
             margin-bottom: 50px;
         }
@@ -67,10 +67,24 @@
             .home-features-picright{
                 flex-direction: column !important;
             }
+            .whyct-content{
+                flex-direction: column;
+                align-items: center;
+            }
+            .whyct-box{
+                width:70% !important;
+            }
+            .home-features-words{
+                width:85% !important;
+                padding: 35px 25px !important;
+            }
         }
 
         .home-features{
             margin: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .home-features-picleft {
             display: flex;
@@ -100,6 +114,7 @@
         .home-features img{
             width:280px;
             height:280px;
+            padding:10px;
         }
         .whyct{
             display: flex;
@@ -124,7 +139,7 @@
             width:30%;
         }
         
-        .whyct-header{
+        .section-header h1{
             font-size:40px;
             margin: 5px;
             text-decoration: underline;
@@ -166,11 +181,12 @@
             </div>
             <div class="home-section-text">
                 <p>
-                    <ul>
+                    <!-- <ul>
                         <li>Protect youself from online terrorist.</li>
                         <li>Hide from the malicious government.</li>
                         <li>Use the best VPN service in the world.</li>
-                    </ul>
+                    </ul> -->
+                    Join us in our fight for Internet Privacy and Digital Security. 
                 </p>
             </div>
 
@@ -184,6 +200,7 @@
         </section>
             
         <section class="home-features">
+            <span class="section-header"><h1>Features</h1></span>
             <div class="home-features-picleft">
                 <img src="media/ww-coverage.jpg">
                 <div class="home-features-words">
@@ -213,7 +230,7 @@
         <hr >
 
         <section class="whyct">
-            <div class="whyct-header">
+            <div class="section-header">
                 <h1>Why <span style="color:#fd8700">Us</span> </h1>
             </div>
 

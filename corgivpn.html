@@ -14,7 +14,7 @@
                 padding:10px;
                 width:98%;
                 margin: auto;
-
+                align-items: center;
 
             }
             .product-1 img{
@@ -23,7 +23,7 @@
             }
             .product-1 h1{
                 font-size: 75px;
-                width:60%;
+                /* width:60%; */
             }
             .product-1 p{
                 font-size: 22px;
@@ -33,8 +33,8 @@
                 /* width: 50%; */
             }
             .product-1-1{
-                padding: 0px 10px;
-                width: 90vw;
+                margin: 0px 60px 0 10px;
+                width: 48vw;
             }
             .download-buttons{
                 margin: 20px 0px;
@@ -43,6 +43,7 @@
             @media (max-width: 1050px) {
                 .product-1{
                     flex-direction: column;
+                    
                 }
             }
 
@@ -55,12 +56,12 @@
                 text-decoration: none;
             }
             .home-floating-review-section {
-            display: flex;
-            /* flex-direction: row-reverse; */
-            justify-content: center;
-            margin: 1%;
-            align-items: center;
-            }
+                display: flex;
+                /* flex-direction: row-reverse; */
+                justify-content: center;
+                margin: 1%;
+                align-items: center;
+                }
 
             .home-floating-review-container {
                 background-color: #edebeb;
@@ -124,6 +125,15 @@
                 .whyvpn-content ul{
                     flex-direction: column;
                 }
+                .product-1-1{
+                    width: 90vw;
+                    margin: 0px 10px 0 10px;
+
+                }
+                video {
+                    width: 320px !important;
+                    height: 180px !important;
+            }
             }
 
             .home-review-box-header-color {
@@ -200,6 +210,11 @@
             .whyvpn-content img{
                 padding: 3px;
             }
+            video {
+                width: 560px;
+                height: 315px;
+                margin: 50px 0px;
+            }
         </style>
     </head>
 
@@ -245,7 +260,9 @@
                         <a href="prevcustomer.html">Already a customer?</a>
                     </div>
                 </div>
-                
+                <video width="320" height="240" controls>
+                    <source src="media/nevergonnagiveyouup.mp4" type="video/mp4">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCWNRzoQGis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
             </section>
             <hr>

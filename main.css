@@ -121,6 +121,7 @@ header hr{
 
 footer{
     background-color: #484848;
+    border-top:3px solid black;
     
 }
 .footer-left{

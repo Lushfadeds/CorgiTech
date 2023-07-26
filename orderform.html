@@ -5,6 +5,85 @@
         <link href="main.css" rel="stylesheet">
         <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h3 {
+	background-color:white;
+	font-family:Garamond;
+	color: Pink;
+	text-decoration: underline;
+	font-size: 25px;
+	} 
+ 
+input[type=text], select { 
+	width:100%; 
+	padding: 12px 20px; 
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px; 
+	box-sizing: border-box;
+} 
+
+input[type=month], select { 
+	width:100%; 
+	padding: 12px 20px; 
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px; 
+	box-sizing: border-box;
+} 
+
+input[type=submit], input[type=reset] {
+	background-color: #FFC0CB;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+    border-radius: 12px;
+		background-color:white;
+		color:black;
+		border:2px solid #FFC0CB;
+}
+input[type=submit], input[type=reset]
+	{  
+	background-color: #FFC0CB;
+	color:white;
+} 	
+
+.checkoutbuttons input:hover 
+	{  
+	background-color: #FFC0CB;
+	color:white;
+} 	
+
+table, th, td { 
+	border: 0px solid white; 
+	border-collapse:collapse;
+		height:40px;
+}
+ 
+th,td {
+	   padding: 5px;
+		
+} 
+
+td { 
+       color: pink; 
+	   text-align: right;
+}
+
+.td {
+	   text-align: left;
+	   
+}
+        </style>
     </head>
     <body>
         
@@ -28,61 +107,62 @@
             <hr>
         </header>
 
-        <article >
+        <article>
             <form action="orderprocessed.html">
 
-                <table>
-                
-                       <caption>Order Form:</caption>
-                       <tr>
-                           <td>Name:</td>
-                           <td><input type="text" name="firstname" placeholder="First" required></td>
-                           <td><input type="text" name="lastname" placeholder="Last" required></td>
-                       </tr> 
-                       
-                       <tr>
-                           <td>Phone number:</td>
-                           <td><input type="text" placeholder="Country" required></td>
-                           <td><input type="text" placeholder="Phone Number" required></td>
-                       </tr> 
-                       
-                       <tr>
-                           <td>Payment:</td>
-                           <td><input type="text" placeholder="Cardholder's Name" required>
-                       </tr>
-                                           
-                       <tr>
-                           <td></td>
-                           <td><input type="text" placeholder="Card Number" required></td>
-                       </tr>
-                
-                       <tr>
-                           <td></td>
-                           <td>Expiry</td>
-                       </tr>
-                
-                       <tr>
-                           <td></td>
-                           <td><input type="month" required></td>
-                           <td><input type="text" placeholder="CVC" required></td>
-                       </tr> 
-                       
-                       <tr>
-                           <td>Pricing plan:</td>
-                           <td><select name="Princing Plan">
-                               <option>$69 (1 Month)</option>
-                               <option>$169 (3 Months)</option>
-                               <option>$269 (6 Months)</option>
-                               <option>$369 (1 Year)</option>
-                               </select></td>
-                       </tr> 
-                       
-                       <tr>
-                           <td colspan="2" align="right">
-                           <input type="submit" value="order"/> &nbsp
-                           <input type="reset" value="reset"/></td>
-                       </tr>
-                       
+                <table border="0" align="center">
+
+                    <h3 align="center">Order Form:</h3>
+                     </br>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="firstname" placeholder="First" required></td>
+                        <td><input type="text" name="lastname" placeholder="Last" required></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>Phone Number :</td>
+                        <td><input type="text" placeholder="Phone Number" required></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>Payment:</td>
+                        <td><input type="text" placeholder="Cardholder's Name" required>
+                    </tr>
+                                        
+                    <tr>
+                        <td></td>
+                        <td><input type="text" placeholder="Card Number" required></td>
+                    </tr>
+             
+                    <tr>
+                        <td></td>
+                        <td class="td">Expiry</td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td><input type="month" required></td>
+                        <td><input type="text" placeholder="CVC" maxlength="3" size="3" required></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>Pricing plan:</td>
+                        <td><select name="Princing Plan">
+                            <option>$69 (1 Month)</option>
+                            <option>$169 (3 Months)</option>
+                            <option>$269 (6 Months)</option>
+                            <option>$369 (1 Year)</option>
+                            </select></td>
+                    </tr> 
+                    
+                    <tr>
+                         
+                        <td colspan="2" align="right">
+                        <input type="submit" value="Checkout"/> &nbsp
+                        <input type="reset" value="Reset"/></td>
+                    </tr>
+                    
                 </table>
                 </form>
 

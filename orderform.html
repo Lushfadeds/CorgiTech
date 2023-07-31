@@ -7,10 +7,14 @@
     <script src="main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        form{
+            width: fit-content;
+            margin: auto;
+        }
         h3 {
             background-color: white;
-            font-family: Garamond;
-            color: pink;
+            font-family: 'Trebuchet MS';
+            color: #fd8700 ;
             text-decoration: underline;
             font-size: 25px;
         }
@@ -39,7 +43,7 @@
 
         input[type=submit],
         input[type=reset] {
-            background-color: #FFC0CB;
+            background-color: #fd8700;
             border: none;
             color: white;
             padding: 16px 32px;
@@ -53,18 +57,18 @@
             border-radius: 12px;
             background-color: white;
             color: black;
-            border: 2px solid #FFC0CB;
+            border: 2px solid #fd8700;
         }
 
         input[type=submit],
         input[type=reset] {
-            background-color: #FFC0CB;
+            background-color: #fd8700;
             color: white;
 
         }
 
         .checkoutbuttons input:hover {
-            background-color: #FFC0CB;
+            background-color: #fd8700;
             color: white;
         }
 
@@ -77,14 +81,34 @@
         }
 
         td {
-            color: pink;
+            color: #fd8700;
             text-align: right;
             padding: 5px;
-            
        
         }
+        .heading{
+           margin-right:20px ; 
+           list-style: none;
+        }
+        .heading3{
+            text-align: center;
+        }
 
-       
+        .ulorderform{
+            display: flex;
+            justify-content: flex-start;
+            /* align-items: center; */
+        }
+
+        @media (max-width:480px) {
+                .ulorderform{
+                    flex-direction: column;
+                }
+        }
+        .liststyle{
+            list-style: none;
+        }
+
     </style>
 </head>
 
@@ -115,61 +139,57 @@
     <article>
         <form action="orderprocessed.html">
 
-            <table class="payment-table">
-                <caption style="text-align:center"><h3>Order Form</h3></caption>
-                
+                <h3 class="heading3">Order Form</h3>
                 </br>
-                <tr>
-                    <td>Name:</td>
-                    <td><input type="text" name="firstname" placeholder="First" required></td>
-                    <td><input type="text" name="lastname" placeholder="Last" required></td>
-                </tr>
+                <h4>Name:</h4>
+                <ul class="ulorderform">
+                    <li class="liststyle"><input type="text" name="firstname" placeholder="First" required></li>
+                    <li class="liststyle"><input type="text" name="lastname" placeholder="Last" required></li>
+                </ul>
 
-                <tr>
-                    <td>Phone Number :</td>
-                    <td><input type="text" placeholder="Phone Number" required></td>
-                </tr>
+                <h4>Phone Number:</h4>
+                <ul class="ulorderform">
+                    <li class="liststyle"><input type="text" placeholder="Phone Number" required></li>
+                </ul>
 
-                <tr>
-                    <td>Payment:</td>
-                    <td><input type="text" placeholder="Cardholder's Name" required>
-                </tr>
+                <h4>Payment:</h4>
+                <ul class="ulorderform">
+                    <li class="liststyle"><input type="text" placeholder="Cardholder's Name" required>
+                </ul>
 
-                <tr>
-                    <td></td>
-                    <td><input type="text" placeholder="Card Number" required></td>
-                </tr>
+                <ul class="ulorderform">
+                    <li class="liststyle"></li>
+                    <li class="liststyle"><input type="text" placeholder="Card Number" required></li>
+                </ul>
 
-                <tr>
-                    <td></td>
-                    <td class="td">Expiry</td>
-                </tr>
+                <ul class="ulorderform">
+                    <li class="liststyle"></li>
+                    <li class="liststyle">Expiry</li>
+                </ul>
 
-                <tr>
-                    <td></td>
-                    <td><input type="month" required></td>
-                    <td><input type="text" placeholder="CVC" maxlength="3" size="3" required></td>
-                </tr>
+                <ul class="ulorderform">
+                    <li class="liststyle"></li>
+                    <li class="liststyle"><input type="month" required></li>
+                    <li class="liststyle"><input type="text" placeholder="CVC" maxlength="3" size="3" required></li>
+                </ul>
 
-                <tr>
-                    <td>Pricing plan:</td>
-                    <td><select name="Princing Plan">
+                <h4>Pricing plan:</h4>
+                <ul class="ulorderform">
+                    <li class="liststyle"><select name="Princing Plan">
                             <option>$69 (1 Month)</option>
                             <option>$169 (3 Months)</option>
                             <option>$269 (6 Months)</option>
                             <option>$369 (1 Year)</option>
-                        </select></td>
-                </tr>
+                        </select></li>
+                    </ul>
 
-                <tr>
-
-                    <td colspan="2" >
+                <ul class="ulorderform">
+                    <li class="liststyle">
                         <input type="submit" value="Checkout" /> &nbsp
                         <input type="reset" value="Reset" />
-                    </td>
-                </tr>
+                    </li>
+                </ul>
 
-            </table>
         </form>
     </article>
 

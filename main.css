@@ -261,18 +261,23 @@ hr {
     font-size: 16px;
     background-color: #fdbe00;
     text-decoration: none;
-    /* border: 1px solid black; */
     color: black;
-    
+}
+p{
+    font-size: 16px;
 }
 h1{
     font-family: 'Trebuchet MS';
+    font-size: 75px;
 }
 h2{
     font-family: 'Trebuchet MS';
+    font-size: 55px;
 }
 h3{
     font-family: 'Trebuchet MS';
+
+    font-size:30px;
 }
 h4{
     font-family: 'Trebuchet MS';

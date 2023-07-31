@@ -6,121 +6,91 @@
         <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            h1{
-                font-size: 40px;
+            article{
+                font-size: 25px;
             }
-            .product-1{
+            .productintro{
                 display: flex;
-                padding:10px;
-                width:98%;
+                padding: 10px;
+                width: 98%;
                 margin: auto;
                 align-items: center;
-
             }
-            .product-1 img{
-                width:35%;
+            .productintro img{
+                width: 35%;
                 height: fit-content;
             }
-            .product-1 h1{
-                font-size: 75px;
-                /* width:60%; */
-            }
-            .product-1 p{
-                font-size: 22px;
-                margin-top: 20px;
-                /* margin-bottom: 170px; */
-                padding:5px;
-                /* width: 50%; */
-            }
-            .product-1-1{
+            .productintro-text{
                 margin: 0px 60px 0 10px;
                 width: 48vw;
             }
             .download-buttons{
                 margin: 20px 0px;
             }
-
             @media (max-width: 1050px) {
-                .product-1{
+                .productintro{
                     flex-direction: column;
-                    
                 }
-                .product-1 img{
-                    width:90%;
+                .productintro img{
+                    width: 90%;
                 }
             }
-
             .button-read{
                 border-radius: 5px;
                 padding: 10px;
-                border:1px solid black;
+                border: 1px solid black;
                 font-size: 12px;
                 background-color: #fdbe00;
                 text-decoration: none;
             }
             .home-floating-review-section {
                 display: flex;
-                /* flex-direction: row-reverse; */
                 justify-content: center;
                 margin: 1%;
                 align-items: center;
-                }
-
+            }
             .home-floating-review-container {
                 background-color: #edebeb;
                 padding: 10px;
                 border-radius: 10px;
                 margin: 20px;
-                color:black;
-                width:300px;
+                color: black;
+                width: 300px;
                 height: 150px;
             }
-
             .review-box-content-layout {
                 display: flex;
                 margin: 1%;
                 flex-direction: column;
             }
-
             .home-review-box-header {
-                /* text-decoration: underline; */
                 font-weight: bold;
-                font-size: 20px;
-                
+                /* font-size: 20px; */
             }
-
             .home-review-text {
-                
                 width: 100%;
                 height: 100%;
                 padding-top: 15px;
             }
-
             .rating {
                 color: black;
-                font-size: 24px;
+                /* font-size: 24px; */
             }
-
             .star {
                 display: inline-block;
                 margin-right: -7px;
             }
-
-
             .review-section {
                 display: flex;
                 margin: 1%;
                 flex-direction: column;
             }
-
-            .home-section-review-header {
+            .review-header {
                 margin: 1%;
-                /* text-decoration: underline; */
                 text-align: left;
                 display: flex;
-                font-size: 30px;
+                /* font-size: 30px; */
             }
-
             @media only screen and (max-width: 768px) {
                 .home-floating-review-section {
                     flex-direction: column;
@@ -128,28 +98,22 @@
                 .whyvpn-content ul{
                     flex-direction: column;
                 }
-                .product-1-1{
+                .productintro-text{
                     width: 90vw;
                     margin: 0px 10px 0 10px;
-
                 }
                 video {
                     width: 320px !important;
                     height: 180px !important;
+                }
             }
-            }
-
             .home-review-box-header-color {
                 color: black;
-
             }
             .pricing {
-                font-size:25px;
-                width:95%;
-                margin:auto;
-            }
-            .pricing h1{
-                font-size:40px;
+                /* font-size: 25px; */
+                width: 95%;
+                margin: auto;
             }
             .pricing table{
                 border-collapse: collapse;
@@ -158,16 +122,12 @@
                 padding: 10px;
                 background-color: #dfdfdf;
                 border: 1px solid black;
-                
             }
             .pricing .feature{
                 text-align: left;
-                width:20%;
-                /* border: 0px solid black !important; */
-                font-size:15px;
+                width: 20%;
+                /* font-size: 15px; */
                 background-color: #edebeb;
-                /* text-decoration: underline; */
-                /* border-bottom: 1px solid black !important; */
             }
             .pricing-feature-blank{
                 background-color: white !important;
@@ -175,15 +135,15 @@
             }
             .pricing-feature-highlight{
                 background-color: #fd8700 !important;
-                color:white;
+                color: white;
             }
-            .home-section-text {
+            .productintro-text {
                 width: 80%;
                 height: 42%;
                 padding: 10px;
-                font-size: 20px;
+                /* font-size: 20px; */
             }
-            .home-section-text li{
+            .productintro-text li{
                 padding: 2px 0px;
                 margin: 8px;
                 width: fit-content;
@@ -192,7 +152,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding:50px 10px;
+                padding: 50px 10px;
             }
             .whyvpn-content{
                 display: flex;
@@ -205,7 +165,7 @@
             }
             .whyvpn-content li {
                 list-style-type: none;
-                padding:30px;
+                padding: 30px;
                 width: 100%;
                 display: flex;
                 align-items: flex-start;
@@ -213,12 +173,6 @@
             .whyvpn-content img{
                 padding: 3px;
             }
-            video {
-                width: 560px;
-                height: 315px;
-                margin: 50px 0px;
-            }
-           
         </style>
     </head>
 
@@ -246,11 +200,10 @@
 
         <article >
             <!-- main heading -->
-            <section class="product-1">
-                <!-- <img src="media/corgivpn.jpg" > -->
-                <div class="product-1-1">
+            <section class="productintro">
+                <div class="productintro-text">
                     <h1>Start securing youself with CorgiVPN</h1>
-                    <div class="home-section-text">
+                    <div class="productintro-text">
                         <p>
                             <ul>
                                 <li>Protect youself from online terrorist.</li>
@@ -265,15 +218,13 @@
                     </div>
                 </div>
                 <img src="media/banner02.JPEG">
-                <!-- <video width="320" height="240" controls> -->
-                    <!-- <source src="media/nevergonnagiveyouup.mp4" type="video/mp4"> -->
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCWNRzoQGis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    
 
             </section>
             <hr>
             <!-- Subscription plans -->
             <section class="pricing">
-                <h1>Subscription <span style="color:#fd8700">plans</span>:</h1> 
+                <h2>Subscription <span style="color:#fd8700">plans</span>:</h2> 
                 <table>
                     <tr>
                         <td class="pricing-feature-blank"></td>
@@ -323,20 +274,20 @@
             <hr>
             <!-- why you should use corgivpn -->
             <section class="whyvpn">
-                <h1>Why you should use CorgiVPN</h1>
+                <h2>Why you should use CorgiVPN</h2>
                 <div class="whyvpn-content">
                     <ul>
                         <li>
                             <img src="media/icons/lock.svg">
                             <div class="whyvpn-content">
-                                <h2>Advanced encryption</h2>
+                                <h3>Advanced encryption</h3>
                                 <p>Corgitech uses AES-256, the strongest there is; Because that's what our customers deserve.</p>
                             </div>
                         </li>
                         <li>
                             <img src="media/icons/location.png">
                             <div class="whyvpn-content">
-                                <h2>Locations everywhere</h2>
+                                <h3>Locations everywhere</h3>
                                 <p>With our worldwide coverage, connect anywhere you want from anywhere you are.</p>
                             </div>
                         </li>
@@ -345,14 +296,14 @@
                         <li>
                             <img src="media/icons/video.png">
                             <div class="whyvpn-content">
-                                <h2>Content from anywhere</h2>
+                                <h3>Content from anywhere</h3>
                                 <p>Escape geo-restrictions, and watch anything from anywhere all at once.</p>
                             </div>
                         </li>
                         <li>
                             <img src="media/icons/hidden.png">
                             <div class="whyvpn-content">
-                                <h2>Browse more anonymously</h2>
+                                <h3>Browse more anonymously</h3>
                                 <p>CorgiVPN hide your internet traffic from others. We ensure that no-one can invade your personal privacy</p>
                             </div>
                         </li>
@@ -361,14 +312,14 @@
                         <li>
                             <img src="media/icons/server.png">
                             <div class="whyvpn-content">
-                                <h2>Private DNS</h2>
+                                <h3>Private DNS</h3>
                                 <p>Since we host our own Domain Name Service servers, we allow for safer and much faster connections.</p>
                             </div>
                         </li>
                         <li>
                             <img src="media/icons/no-logs.png">
                             <div class="whyvpn-content">
-                                <h2>No activity or connection logs</h2>
+                                <h3>No activity or connection logs</h3>
                                 <p>Keeping to our commitment for full internet privacy, Corgitech does not keep any internet traffic or information that may be linked to you.</p>
                             </div>
                         </li>
@@ -378,14 +329,14 @@
             <hr>
             <!-- Review section -->
             <section class="review-section">
-                <div class="home-section-review-header">
-                    <h1>Reviews:</h1>
+                <div class="review-header">
+                    <h2>Reviews:</h2>
                 </div>
                 <div class="home-floating-review-section">
                     <div class="home-floating-review-container">
                         <section class="review-box-content-layout">
                             <div>
-                               <span class="home-review-box-header"> The Verge</span>
+                               <h3> The Verge</h3>
                                 <div class="rating">
                                     <div class="star">&#9733;</div>
                                     <div class="star">&#9733;</div>
@@ -403,7 +354,7 @@
                     <div class="home-floating-review-container">
                         <section class="review-box-content-layout">
                             <div >
-                               <span class="home-review-box-header">The Straits Times</span>
+                               <h3>The Straits Times</h3>
                                 <div class="rating">
                                     <div class="star">&#9733;</div>
                                     <div class="star">&#9733;</div>
@@ -420,7 +371,7 @@
                     <div class="home-floating-review-container">
                         <section class="review-box-content-layout">
                             <div >
-                               <span class="home-review-box-header"> Channel News Asia</span>
+                               <h3> Channel News Asia</h3>
                                 <div class="rating">
                                     <div class="star">&#9733;</div>
                                     <div class="star">&#9733;</div>

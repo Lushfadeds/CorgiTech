@@ -15,8 +15,8 @@ article
 }
 .container 
 { 
-	margin: 0 40px;
-	max-width: 600px;
+	margin: auto;
+	max-width: 800px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px; 

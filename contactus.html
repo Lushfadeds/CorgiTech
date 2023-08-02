@@ -9,25 +9,35 @@
     <style>
         .contact-us-container {
             display: flex;
-            margin: 20px;
-            padding: 5%;
+            flex-wrap: wrap;
             justify-content: center;
+            margin: auto;
+            padding: 20px;
         }
 
-        .contact-us-line {
-            border-right: 1px solid black;
-
-
-        }
-
-        .contact-us-left {
+        .contact-us-form {
             display: flex;
-            justify-content: left;
+            margin: 50px;
+            text-decoration: none;
         }
 
-        .contact-us-left td {
-            padding: 10px;
-            text-align: left;
+        .contact-us-form ul {
+            list-style-type: none;
+            padding: 10px 10px 10px 0px;
+        }
+
+        .contact-us-address {
+            display: flex;
+            margin: 10px;
+        }
+
+        .contact-us-container label {
+            padding-right: 100px;
+        }
+
+        .nameemail {
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .contact-us-address {
@@ -38,379 +48,113 @@
             flex-direction: column;
             min-width: 400px;
         }
-        .contact-us-left-responsive-old table {
-            display: none;
-            justify-content: left;
+
+        .contact-us-line {
+            border-right: 1px solid black;
+
+
         }
-
-        .contact-us-left-responsive-old td {
-            padding: 10px;
-            text-align: left;
-        }
-
-
-        .contact-us-left-responsive-new table {
-            display: none;
-            justify-content: left;
-        }
-
-        .contact-us-left-responsive-new td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        .contact-us-address h1 {
-            margin-bottom: 30px;
-        }
-
         .view-map {
-            display: none;
-            margin-top: 45px;
-        }
-
-
-        @media screen and (max-width: 980px) {
-            .contact-us-address {
-                display: flex;
-                margin: auto;
-                padding-left: 0px;
-                justify-content: center;
-                flex-direction: column;
-                min-width: 400px;
+                display: none;
             }
 
-            .contact-us-left table {
+
+        @media screen and (max-width: 1130px) {
+            .contact-us-line {
                 display: none;
-                justify-content: left;
+
+
             }
 
             .contact-us-container {
-                align-items: center;
-
                 flex-direction: column;
-            }
-            .contact-us-text {
-                display: none;
-            }
-            .map-one {
-                display: none;
-            }
-            .contact-us-left-responsive-old table {
-                display: flex;
-                justify-content: left;
-            }
 
-            .contact-us-left-responsive-old td {
-                padding: 10px;
-                text-align: left;
             }
-
-        }
-
-        @media screen and (max-width: 600px) {
-
-            .contact-us-left-responsive-old table {
-                display: none;
+            .contact-us-address{
+               width: fit-content;
+               margin: auto;
+               padding: 0;
             }
-
-            .contact-us-text {
-                display: none;
-            }
-
-            .contact-us-left-responsive-new table {
-                display: flex;
-                justify-content: left;
-            }
-
-            .contact-us-left-responsive-new td {
-                padding: 10px;
-                text-align: left;
-            }
-
-            .map-one {
-                display: none;
+            .contact-us-form{
+            justify-content: center;
+        }}
+        @media screen and (max-width: 600px){
+            .contact-us-form{
+                margin:0;
             }
         }
-
-        @media screen and (max-width: 460PX) {
-            .map-two {
+        @media screen and (max-width: 480px){
+            .map {
                 display: none;
             }
-
-
-
             .view-map {
                 display: flex;
             }
 
-
         }
     </style>
-
-
-
-
 </head>
-
-
-
 
 <body>
 
-
     <header>
         <nav class="navbar">
-            <div class="company-name"> <img src="media/corgitechlogo01.jpg" id="c-logo"> <span id="cn">Corgitech</span> <span id="cn-subtitle"> Privacy First, Money Second </span> </div>
+            <div class="company-name"> <img src="media/corgitechlogo01.jpg" id="c-logo"> <span id="cn">Corgitech</span>
+                <span id="cn-subtitle"> Privacy First, Money Second </span>
+            </div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </a>
-            <div class="navbar-links"> 
+            <div class="navbar-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="corgivpn.html">CorgiVPN</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
-            </div> 
+            </div>
         </nav>
         <hr>
     </header>
+
     <article>
-
         <div class="contact-us-container">
-            <div class="contact-us-left">
+
+            <div class="contact-us-form">
                 <form>
-                    <table>
-                        <form></form>
-                        <tr>
-                            <td colspan="2">
-                                <h3>Send us a message!</h3>
-                            </td>
+                    <span>
+                        <h3>Send Us A Message!</h3>
+                    </span>
 
-                        </tr>
-                        <tr>
-                            <td>Name:</td>
-                            <td>Email:</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="email"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Message:</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td><input class="button-css button-button" type="submit"></td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Or Call/Email us</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Tel: 6389 2200 </p>
-                                <p> imh_appt@imh.com.sg </p>
-                            </td>
-
-                        </tr>
-                </form>
-                </table>
+                    <div class="nameemail">
+                        <ul>
+                            <li><label>Name:</label>
+                            <li>
+                            <li><input id="Name" type="textarea"></li>
+                        </ul>
+                        <ul>
+                            <li><label>Email:</label>
+                            <li>
+                            <li><input id="email" type="email"></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><label for message>Message:</label>
+                        <li>
+                        <li><input id="message" name="message" type="textarea"></li>
+                    </ul>
+                    <input class="button-css button-button" type="submit">
             </div>
-
-
-
-
-
-            <div class="contact-us-left-responsive-new">
-                <form>
-                    <table>
-                        <form></form>
-                        <tr>
-                            <td colspan="2">
-                                <h3>Send us a message!</h3>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>Name:</td>
-
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-
-                        </tr>
-                        <tr>
-                            <td><input type="email"></td>
-
-                        </tr>
-                        <tr>
-                            <td colspan="2">Message:</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td><input class="button-css button-button" type="submit"></td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Or Call/Email us</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Tel: 6389 2200 </p>
-                                <p> imh_appt@imh.com.sg </p>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Or visit us at our office</h3>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    Buangkok Green Medical Park<br>
-                                    10 Buangkok View<br>
-                                    Singapore 539747
-                                </p> <br>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <div class="view-map">
-                                    <div class="home-section-buy-now button-buy button-css">
-                                        <a href="https://goo.gl/maps/dXFw66YNjnXaUWg66">View map</a>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td class="map-two">
-                                
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6579209256683!2d103.88214927484265!3d1.3818959614722683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1641f06ebea3%3A0x1b5010740cbc00ef!2sInstitute%20of%20Mental%20Health!5e0!3m2!1sen!2ssg!4v1689127191949!5m2!1sen!2ssg"
-                                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                               
-                            </td>
-
-                        </tr>
-                </form>
-                </table>
-            </div>
-            <div class="contact-us-left-responsive-old">
-                <form>
-                    <table>
-                        <form></form>
-                        <tr>
-                            <td colspan="2">
-                                <h3>Send us a message!</h3>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>Name:</td>
-<td>Email:</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
- <td><input type="email"></td>
-
-                        
-                           
-                        </tr>
-                        <tr>
-                            <td colspan="2">Message:</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td><input class="button-css button-button" type="submit"></td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Or Call/Email us</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Tel: 6389 2200 </p>
-                                <p> imh_appt@imh.com.sg </p>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Or visit us at our office</h3>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    Buangkok Green Medical Park<br>
-                                    10 Buangkok View<br>
-                                    Singapore 539747
-                                </p> <br>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <div class="view-map">
-                                    <div class="home-section-buy-now button-buy button-css">
-                                        <a href="https://goo.gl/maps/dXFw66YNjnXaUWg66">View map</a>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td class="map-two">
-                                
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6579209256683!2d103.88214927484265!3d1.3818959614722683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1641f06ebea3%3A0x1b5010740cbc00ef!2sInstitute%20of%20Mental%20Health!5e0!3m2!1sen!2ssg!4v1689127191949!5m2!1sen!2ssg"
-                                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                
-                            </td>
-
-                        </tr>
-                </form>
-                </table>
-            </div>
-
-
+            </form>
 
             <div class="contact-us-line">
             </div>
+
+
+
+
 
             <div class="contact-us-address">
                 <div class="contact-us-text">
@@ -421,11 +165,16 @@
                         Singapore 539747
                     </p> <br>
                 </div>
-                <div class="map-one">
+                <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6579209256683!2d103.88214927484265!3d1.3818959614722683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1641f06ebea3%3A0x1b5010740cbc00ef!2sInstitute%20of%20Mental%20Health!5e0!3m2!1sen!2ssg!4v1689127191949!5m2!1sen!2ssg"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="view-map">
+                    <div class="home-section-buy-now button-buy button-css">
+                        <a href="https://goo.gl/maps/dXFw66YNjnXaUWg66">View map</a>
+                    </div>
                 </div>
 
 
@@ -438,20 +187,6 @@
 
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
 
 
 

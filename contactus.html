@@ -123,27 +123,27 @@
         <div class="contact-us-container">
 
             <div class="contact-us-form">
-                <form>
+                <form action="/submit" method="post">
                     <span>
                         <h3>Send Us A Message!</h3>
                     </span>
 
                     <div class="nameemail">
                         <ul>
-                            <li><label>Name:</label>
-                            <li>
-                            <li><input id="Name" type="textarea"></li>
+                            <li><label for="name">Name:</label>
+                            </li>
+                            <li><input id="name" name="name" type="text" required></li>
                         </ul>
                         <ul>
-                            <li><label>Email:</label>
-                            <li>
-                            <li><input id="email" type="email"></li>
+                            <li><label for="email">Email:</label>
+                            </li>
+                            <li><input id="email" name="email" type="email" required></li>
                         </ul>
                     </div>
                     <ul>
-                        <li><label for message>Message:</label>
-                        <li>
-                        <li><input id="message" name="message" type="textarea"></li>
+                        <li><label for="message">Message:</label>
+                        </li>
+                        <li><textarea id="message" name="message" required></textarea></li>
                     </ul>
                     <input class="button-css button-button" type="submit">
             </div>
@@ -151,9 +151,6 @@
 
             <div class="contact-us-line">
             </div>
-
-
-
 
 
             <div class="contact-us-address">

@@ -7,7 +7,8 @@
 article{
     width: 90%;
     margin: auto;
-    
+    min-height: 1000px;
+    padding: 10px 0px;
 }
 
 .company-name {
@@ -47,7 +48,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 12px 5px;
+    padding: 5px 5px 0px 5px;
 }
 .navbar-links ul{
     margin: 0;
@@ -117,6 +118,7 @@ header{
 }
 header hr{
     border: 2px solid black;
+    margin: 0px;
 }
 
 footer{
@@ -198,9 +200,7 @@ footer ul li {
         padding: 11px;
     }
 }
-article{
-    min-height: 1000px;
-}
+
 table{
     display: block;
     padding:10px;

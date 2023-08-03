@@ -7,8 +7,8 @@
     <script src="main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/sqlogo3.png" type="image/icon x-type">
-        <!-- Pls Change accordingly -->
-        <title>Contact Us</title>
+    <!-- Pls Change accordingly -->
+    <title>Contact Us</title>
     <style>
         .contact-us-container {
             display: flex;
@@ -49,7 +49,7 @@
             padding-left: 5%;
             justify-content: center;
             flex-direction: column;
-            min-width: 400px;
+          
         }
 
         .contact-us-line {
@@ -57,9 +57,10 @@
 
 
         }
+
         .view-map {
-                display: none;
-            }
+            display: none;
+        }
 
 
         @media screen and (max-width: 1130px) {
@@ -73,26 +74,48 @@
                 flex-direction: column;
 
             }
-            .contact-us-address{
-               width: fit-content;
-               margin: auto;
-               padding: 0;
+
+            .contact-us-address {
+                width: fit-content;
+                margin: auto;
+                padding: 0;
             }
-            .contact-us-form{
-            justify-content: center;
-        }}
-        @media screen and (max-width: 600px){
-            .contact-us-form{
-                margin:0;
+
+            .contact-us-form {
+                justify-content: center;
+
             }
         }
-        @media screen and (max-width: 480px){
+
+        @media screen and (max-width: 600px) {
+            .contact-us-form {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
             .map {
                 display: none;
             }
+
             .view-map {
                 display: flex;
             }
+
+            .nameemail {
+                flex-direction: column;
+            }
+
+            .contact-us-form {
+                flex-direction: column;
+            }
+            .contact-us-address {
+                padding:10px 10px 10px 0px;
+                margin: 0px;
+            
+          
+        }
+
 
         }
     </style>
